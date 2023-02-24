@@ -1,15 +1,17 @@
 :root {
+  --main-title-color: #fff;
+  --secondary-title-color: #303030;
+  --accent-color: #ff6c00;
+  --main-text-color: #9da4bd;
+  --secondary-font: "Raleway", sans-serif;
   --margin-basic: 20px 0 20px;
 }
-
 .list {
   list-style: none;
 }
-
 .link {
   text-decoration: none;
 }
-
 .btn {
   font-weight: 600;
   font-size: 12px;
@@ -18,7 +20,18 @@
   text-transform: uppercase;
   cursor: pointer;
 }
-
+.title {
+  font-family: --secondary-font;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+}
+.subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -40,11 +53,11 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  color: #fff;
+  color: var(--main-title-color);
 }
 .header-link:hover,
 .header-link:focus {
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 
 .header-tel {
@@ -53,10 +66,10 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--main-title-color);
 }
 .header-btn {
-  color: #ffffff;
+  color: var(--main-title-color);
 }
 
 img {
@@ -84,28 +97,20 @@ img {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  color: #303030;
+  color: var(--secondary-title-color);
 }
 
 .hero-link:hover,
 .hero-link:focus {
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 
 .hero-subtitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
 }
 
 .hero-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 72px;
-  line-height: 1.18;
-  letter-spacing: 0.05em;
-  color: #ffffff;
+  color: var(--main-title-color);
 }
 
 .hero-description {
@@ -113,7 +118,7 @@ img {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  color: #9da4bd;
+  color: var(--main-text-color);
 }
 
 /* About */
@@ -124,18 +129,10 @@ img {
 .about-item {
 }
 .about-subtitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
-  color: #303030;
+  color: var(--secondary-title-color);
 }
 .about-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-  color: #303030;
+  color: var(--secondary-title-color);
 }
 .about-description {
   font-size: 14px;
@@ -150,7 +147,7 @@ img {
 }
 
 .about-btn {
-  color: #303030;
+  color: var(--secondary-title-color);
 }
 
 /* Price */
@@ -159,18 +156,10 @@ img {
   background-color: gray;
 }
 .price-subtitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
 }
 .price-title {
-  font-family: "Raleway";
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-  color: #ffffff;
+  color: var(--main-title-color);
 }
 .price-list {
 }
@@ -180,24 +169,137 @@ img {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  color: #9da4bd;
+  color: var(--main-text-color);
 }
 .price-btn {
-  color: #ffffff;
+  color: var(--main-title-color);
 }
 
-/* Why */
-.why {
+/* Feature */
+.benefits {
 }
-.why-list {
+.benefits-list {
 }
-.why-item {
+.benefits-item span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: var(--secondary-title-color);
 }
-.why-item-text {
+.benefits-item {
 }
-.why-subtitle {
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--secondary-title-color);
 }
-.why-title {
+.benefits-subtitle {
+  color: var(--secondary-title-color);
 }
-.why-slogan {
+.benefits-title {
+  color: var(--secondary-title-color);
+}
+.benefits-slogan {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* Team */
+.barbers {
+}
+.barbers-subtitle {
+  color: var(--secondary-title-color);
+}
+.barbers-title {
+  color: var(--secondary-title-color);
+}
+.barbers-list {
+}
+.barbers-item {
+}
+.barbers-item-title {
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-title-color);
+}
+.barbers-item-text {
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* Gallery */
+.gallery {
+}
+.gallery-subtitle {
+  color: var(--secondary-title-color);
+}
+.gallery-list {
+}
+.list {
+}
+.gallery-item {
+}
+
+/* Contacts */
+.contacts {
+  background-color: gray;
+}
+.contacts-title {
+  color: var(--main-title-color);
+}
+
+.contacts-address {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.contacts-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+.contacts-hours {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
 }
